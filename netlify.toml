@@ -1,0 +1,19 @@
+# Netlify configuration for Task & Associates (static site, no build step)
+
+[build]
+  publish = "."
+
+# Friendly custom 404 for any unknown URL (real files are served first)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Sensible security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
