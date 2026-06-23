@@ -84,4 +84,4 @@ Step-by-step instructions for each were shared separately.
 ## Contact
 
 **Task & Associates — Chartered Accountants**
-14/40, Sector-14, Indira Nagar, Lucknow · Tel: 0522-4060660 · uae.ihd@agpcorporation.com
+14/40, Sector-14, Indira Nagar, Lucknow · Tel: 0522-4060660 · info@taskassociates.in
