@@ -339,7 +339,7 @@ img {
 .hero {
   margin-top: calc(var(--topbar-height) + var(--header-height));
   min-height: 88vh;
-  background: linear-gradient(118deg, rgba(43,20,77,0.96) 0%, rgba(79,45,127,0.84) 46%, rgba(43,20,77,0.42) 100%), url('../images/hero.jpg?v=3') center/cover no-repeat;
+  background: linear-gradient(118deg, rgba(43,20,77,0.96) 0%, rgba(79,45,127,0.84) 46%, rgba(43,20,77,0.42) 100%), url('../images/hero.jpg?v=4') center/cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
