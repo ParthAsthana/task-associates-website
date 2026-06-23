@@ -221,19 +221,30 @@ img {
   gap: 0.8rem;
   background: var(--primary-purple);
   color: var(--text-light);
-  padding: 1rem 2.4rem;
-  border-radius: 4px;
+  padding: 1.1rem 2.4rem;
+  border-radius: 6px;
   font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(79, 45, 127, 0.28);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   cursor: pointer;
 }
 
+/* keep the label + arrow white (beats .nav-desktop a colour), no underline */
+.nav-desktop a.btn-contact,
+.nav-desktop a.btn-contact:hover {
+  color: var(--text-light);
+}
+
+.nav-desktop a.btn-contact::after { display: none; }
+
 .btn-contact:hover {
   background: var(--dark-purple);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(43, 20, 77, 0.35);
 }
 
 .btn-contact svg {
