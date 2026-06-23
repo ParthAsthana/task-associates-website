@@ -649,11 +649,58 @@ img {
 .about-image.presence-card {
   background: linear-gradient(180deg, #ffffff, #faf8fd);
   border: 1px solid var(--border-color);
+  border-radius: 14px;
+  box-shadow: 0 18px 44px -22px rgba(43, 20, 77, 0.28);
   padding: 2.8rem 2.4rem 2rem;
   display: flex;
   flex-direction: column;
   height: auto;
 }
+
+.presence-stats {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+.presence-stat b {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-purple);
+  letter-spacing: -0.01em;
+}
+
+.presence-stat span {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.presence-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-top: 0.4rem;
+}
+
+.presence-legend .lg-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.presence-legend .lg-city { background: var(--primary-purple); }
+.presence-legend .lg-hq { background: var(--accent-red); }
 
 .presence-tag {
   font-size: 1.2rem;
@@ -699,6 +746,10 @@ img {
   transform-box: fill-box;
   transform-origin: center;
   animation: hqPulse 2.2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hq-pulse { animation: none; }
 }
 
 /* ===== SERVICE IMAGE PANEL ===== */
